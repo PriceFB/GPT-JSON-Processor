@@ -35,7 +35,7 @@ OpenAI's API is a **paid service**. You must complete the following steps to use
    - Visit the [Billing and Payment Page](https://platform.openai.com/account/billing/overview) to add credits.
 
 4. **Review OpenAI Models**:  
-   - For a complete list of OpenAI models and their capabilities, visit the [Model Overview](https://platform.openai.com/docs/models/overview).  
+   - For a complete list of OpenAI models and their capabilities, visit the [Model Overview](https://platform.openai.com/docs/models/).  
    - This script uses the `gpt-3.5-turbo` model by default, but you can customize this as needed.
 
 ---
