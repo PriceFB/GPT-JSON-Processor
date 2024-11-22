@@ -25,19 +25,17 @@ os.getcwd
 
 load_dotenv()
     
+# Edit your .env to spcify an api key, org id, and proj id. 
 client = OpenAI(
     api_key=os.environ.get("OPENAI_API_KEY"),
+    organization=os.environ.get("ORG_ID"),
+    project=os.environ.get("PROJ_ID"),
     )
-
-client = OpenAI(
-  organization=os.environ.get("ORG_ID"),
-  project=os.environ.get("PROJ_ID"),
-)
 
 starting_assistant = ""
 starting_thread = ""
 
-
+# Customize your OpenAI assistant
 def create_assistant():
     if starting_assistant == "":
         my_assistant = client.beta.assistants.create(
